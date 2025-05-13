@@ -104,8 +104,5 @@ def handle_callback_query(call):
         mas = bot.send_message(chat_id, "Выбери интересующий раздел, нажав одну из кнопок ниже.",
                                reply_markup=get_biography_menu())
         messages[chat_id].append(mas)
-
-
-
 if __name__ == '__main__':
     bot.polling(none_stop=True)
